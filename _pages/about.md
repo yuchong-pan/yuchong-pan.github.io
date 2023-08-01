@@ -25,4 +25,4 @@ My research interests lie at the intersection of algorithms, combinatorics and o
 
 When not doing research, I enjoy hiking, backpacking and kayaking. I am completing the <a target="_blank" href="https://en.wikipedia.org/wiki/Four-thousand_footers">"NH 48" list of 4000 footers in New Hampshire</a>.
 
-You can find me at yuchong [at] mit [dot] edu.
+You can find me at [first-name] [at] mit [dot] edu.
