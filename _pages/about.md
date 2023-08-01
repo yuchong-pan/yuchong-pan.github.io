@@ -9,9 +9,10 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>MIT, Room 2-333A</p>
+    <p>Department of Mathematics</p>
+    <p>77 Massachusetts Avenue</p>
+    <p>Cambridge, MA 02139-4307</p>
 
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
