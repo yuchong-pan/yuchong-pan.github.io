@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a target="_blank" href='https://math.mit.edu/'>MIT Mathematics Department</a>
 
 profile:
   align: right
@@ -19,8 +19,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hello! I am a third-year graduate student in the <a target="_blank" href='https://math.mit.edu/'>MIT Mathematics Department</a>, where I am very fortunate to be advised by <a target="_blank" href="https://math.mit.edu/~goemans/">Professor Michel X. Goemans</a>. Before that, I obtained my B.Sc. in Computer Science and Mathematics (Combined Honours) with Distinction at the <a target="_blank" href="https://www.ubc.ca/">University of British Columbia</a>, where I was advised by <a target="_blank" href="https://bshepherd.ca/">Professor F. Bruce Shepherd</a>. UBC has a stunning campus surrounded by forest on three sides and the Pacific Ocean on the fourth.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My research interests lie at the intersection of algorithms, combinatorics and optimization, in particular designing discrete algorithms and analyzing discrete structures. I am also broadly interested in theoretical computer science, operations research and graph theory.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+When not doing research, I enjoy hiking, backpacking and kayaking. I am completing the <a target="_blank" href="https://en.wikipedia.org/wiki/Four-thousand_footers">"NH 48" list of 4000 footers in New Hampshire</a>.
