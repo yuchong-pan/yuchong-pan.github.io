@@ -9,7 +9,7 @@ profile:
   image: yuchong_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>MIT, Room 2-333A</p>
+    <p>MIT, <a target="_blank" href="http://whereis.mit.edu/?go=2">Room 2-333A</a></p>
     <p>77 Massachusetts Avenue</p>
     <p>Cambridge, MA 02139</p>
 
