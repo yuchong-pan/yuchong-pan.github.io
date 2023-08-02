@@ -23,6 +23,6 @@ Hello! I am a third-year graduate student in the <a target="_blank" href='https:
 
 My research interests lie at the intersection of algorithms, combinatorics and optimization, in particular designing discrete algorithms and analyzing discrete structures. I am also broadly interested in theoretical computer science, operations research and graph theory.
 
-When not doing research, I enjoy hiking, backpacking and kayaking. I am completing the <a target="_blank" href="https://en.wikipedia.org/wiki/Four-thousand_footers">"NH 48" list of 4000 footers in New Hampshire</a>.
+When not doing mathematics, I enjoy hiking, backpacking and kayaking. I am completing the <a target="_blank" href="https://en.wikipedia.org/wiki/Four-thousand_footers">"NH 48" list of 4000 footers in New Hampshire</a>.
 
 You can find me at [first-name] [at] mit [dot] edu.
