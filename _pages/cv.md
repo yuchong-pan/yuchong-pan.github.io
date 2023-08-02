@@ -1,6 +1,5 @@
 ---
 layout: default
-permalink: /resume/
 title: résumé
 nav: true
 nav_order: 4
