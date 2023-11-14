@@ -30,9 +30,9 @@ layout: default
               cache_bust=true -%}
             {% endif -%}
             {%- if page.profile.address %}
-            <div class="address">
+            <pre class="address" style="display:inline">
               {{ page.profile.address }}
-            </div>
+            </pre>
             {%- endif %}
           </div>
           {%- endif %}
