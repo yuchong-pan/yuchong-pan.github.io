@@ -56,7 +56,7 @@ layout: default
           <!-- Selected papers -->
           {% if page.selected_papers -%}
             <h2><a href="{{ '/papers/' | relative_url }}" style="color: inherit;">selected papers</a></h2>
-            <p>Following conventions of mathematics and theoretical computer science, author names are listed alphabetically.</p>
+            <p class="post-description">Following conventions of mathematics and theoretical computer science, author names are listed alphabetically.</p>
             {%- include selected_papers.html %}
           {%- endif %}
 
