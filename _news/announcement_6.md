@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I will be back in Vancouver from May 18 to May 22! Let me know if you are also around. One or two talks in UBC CS are being scheduled. 🇨🇦
+I will be back in Vancouver from May 18 to May 23! Let me know if you are also around. One or two talks in UBC CS are being scheduled. 🇨🇦
