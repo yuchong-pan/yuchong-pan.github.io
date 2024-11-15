@@ -23,6 +23,6 @@ Hello! I am a third-year graduate student in the <a target="_blank" href='https:
 
 My research interests include algorithms, combinatorics and optimization, in particular designing discrete algorithms and analyzing discrete structures. I am also broadly interested in theoretical computer science, operations research and graph theory.
 
-While not doing mathematics, I enjoy hiking, kayaking and skiing. I am peak-bagging the <a target="_blank" href="https://www.google.com/maps/d/u/0/edit?mid=1xaxmvyMnFQo9-5SqKyxh1VTOtMe3FeU&usp=sharing">"NH 48" list of 4000 footers in New Hampshire</a>.
+While not doing mathematics, I enjoy hiking, backpacking, kayaking and skiing. I am peak-bagging the <a target="_blank" href="https://www.google.com/maps/d/u/0/edit?mid=1xaxmvyMnFQo9-5SqKyxh1VTOtMe3FeU&usp=sharing">"NH 48" list of 4000 footers in New Hampshire</a>. Check out photos on my [Instagram](https://www.instagram.com/panyuchong/)!
 
 You can find me at [first-name] [at] mit [dot] edu.
