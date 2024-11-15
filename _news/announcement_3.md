@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I will be in Miami on April 12 to attend the Citadel Securities PhD Summit. Stop by my poster (on my work with Alan) if you are also there! 🏝
+I will be in Miami on April 12 to attend the Citadel Securities PhD Summit. Stop by my poster (on my work with Alan) if you are around! 🏝
