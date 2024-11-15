@@ -6,7 +6,7 @@ subtitle: #<a target="_blank" href='https://math.mit.edu/'>MIT Mathematics Depar
 
 profile:
   align: right
-  image: yuchong_pic.jpg
+  image: yuchong_garibaldi_small.jpg
   image_circular: false # crops the image to make it circular
   address: >
     <p>MIT, <a target="_blank" href="http://whereis.mit.edu/?go=2">Room 2-333A</a></p>
