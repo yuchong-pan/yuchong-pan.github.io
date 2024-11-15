@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2023-10-15 23:59:59-0400
+date: 2024-04-11 16:30:00-0400
 inline: true
 related_posts: false
 ---
 
-I hiked the [Pemi loop](https://www.alltrails.com/explore/recording/afternoon-hike-at-pemigewasset-loop-a9fb9e6) with Shutao! ⛰
+I will be back in Vancouver from May 18 to May 23! Let me know if you are also around. One or two talks in UBC CS are being scheduled. 🇨🇦

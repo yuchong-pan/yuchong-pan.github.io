@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2023-08-06 05:34:30-0400
+date: 2023-10-11 00:00:00-0400
 inline: true
 related_posts: false
 ---
 
-I am flying back to China after 4 years and 3 months! I will land on August 11. Let me know if you want to grab coffee/lunch/dinner together. 🛬
+Tomorrow (October 12) in 2-132, I will give a talk titled *Fantastic Spanning Trees in Planar Graphs and Where to Find Them*, based on my joint work with my RSI student Alan, at the [Simple Person's Applied Math Seminar (SPAMS)](https://math.mit.edu/spams/). Food from 醉杭州 (including 酒酿圆子) will be provided! 🥘
