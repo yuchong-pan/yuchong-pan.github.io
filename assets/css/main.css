@@ -1,0 +1,719 @@
+/*
+ * Visual system reconstructed from the bshepherd.ca page supplied by the user.
+ * Content and imagery are deliberately configurable/replaced.
+ */
+
+html { -webkit-text-size-adjust: 100%; width: 100%; height: 100%; font-size: 62.5%; }
+body { margin: 0; }
+a { background-color: transparent; }
+img { border-style: none; vertical-align: middle; }
+button,input,optgroup,select,textarea { font-family: inherit; font-size: 100%; line-height: 1.15; margin: 0; }
+* { box-sizing: border-box; }
+::selection { background: #b3d4fc; text-shadow: none; }
+
+body {
+  font-size: 1.6em;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Cabin", "Long Cang", "Xingkai SC", "STXingkai", "华文行楷";
+  color: #222;
+  padding-bottom: 80px;
+  background: #F9F9F9;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  z-index: 2;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0 0 2rem;
+  font-family: "Cabin", "Long Cang", "Xingkai SC", "STXingkai", "华文行楷";
+  font-weight: 400;
+}
+h1 { font-size: 3.8rem; line-height: 1.2; letter-spacing: -.1rem; }
+h2 { font-size: 3rem; line-height: 1.25; letter-spacing: -.1rem; color: #7E5F4E; margin: 4rem 0 2rem; padding-bottom: .4rem; border-bottom: 1px solid #c8c8c8; }
+h3 { font-size: 2.4rem; line-height: 1.3; letter-spacing: -.1rem; margin: 2.6rem 0 1.6rem; }
+h4 { font-size: 2rem; line-height: 1.35; letter-spacing: -.08rem; text-transform: uppercase; color: rgba(87,87,87,.8); }
+p { margin: 0 0 2rem; }
+ul:not(.nav) { list-style: circle; }
+ol,ul:not(.nav) { padding-left: 2rem; margin-top: 1rem; }
+ol li,ul:not(.nav) li { padding-left: .8rem; margin-bottom: 1rem; }
+
+/* Header — values retained from the supplied reference stylesheet. */
+#header {
+  background-image: var(--site-background-image);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #FFF;
+  z-index: 1;
+  text-align: right;
+  margin-bottom: 6rem;
+}
+#header #nav-container {
+  display: inline-block;
+  background: rgba(29,53,83,.85);
+  padding: 5rem 5rem;
+  position: relative;
+  margin-right: 13.5%;
+  z-index: 2;
+}
+#header #logo {
+  font-size: 4.8rem;
+  font-weight: 400;
+  letter-spacing: .2rem;
+  padding: 0 0 1.6rem;
+  margin: 0 0 1.6rem;
+  border-bottom: .1rem solid #999999;
+}
+#header #logo a { color: #FFF; text-decoration: none; font-weight: normal; font-family: inherit; }
+#header #logo, #header #main-nav, #header #main-nav a {
+  font-family: "Cabin", "Long Cang", "Xingkai SC", "STXingkai", "华文行楷";
+}
+#header #main-nav { list-style: none; margin: 0; padding: 0; }
+#header #main-nav li a {
+  color: #FFF;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+#header #main-nav li.active a { font-weight: 700; }
+
+body.home { width: 100%; height: 100%; padding: 0; margin: 0; overflow: hidden; }
+body.home #header { position: fixed; inset: 0; padding: 0; margin: 0; }
+
+/* Inner-page sidebar style from the reference stylesheet. */
+body.sidebar-layout #header {
+  position: fixed;
+  top: 0; bottom: 0; left: 0;
+  width: 35%;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: right;
+  clip-path: none !important;
+}
+body.sidebar-layout #header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #1D3553;
+  opacity: .18;
+  z-index: 0;
+}
+body.sidebar-layout #header #nav-container {
+  margin-top: 200px;
+  background: transparent;
+  width: auto !important;
+  padding: 0 40px 0 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+body.sidebar-layout #header #logo {
+  font-size: 4.5rem;
+  padding: 0 0 18px 20px !important;
+  margin: 0 0 18px 0 !important;
+}
+body.sidebar-layout #header #main-nav li a { font-weight: 600; color: rgba(215,252,255,.9); }
+body.sidebar-layout #content { margin-top: 214px; margin-left: 35%; padding-left: 40px; }
+body.sidebar-layout.sidebar-headerangle #header {
+  padding-right: 40px !important;
+  clip-path: polygon(0 0,100% 0,92% 100%,0 100%) !important;
+}
+#content .content-inner { width: min(800px, calc(100vw - 35% - 80px)); padding: 0 20px 0px; }
+
+/* Content */
+a,.tag-toggle-container label { color: #026B7E; text-decoration: none; font-weight: 700; }
+a:hover { text-decoration: underline; }
+.button {
+  display: inline-block; line-height: 3.2rem; padding: 0 2rem; font-weight: bold;
+  color: #026B7E; border: 1px solid #026B7E; border-radius: 4px; background: #FFF;
+  text-decoration: none; transition: color .25s,background-color .25s;
+}
+.button:hover { background: #026B7E; color: #FFF; text-decoration: none; }
+.grey-text { color: rgba(87,87,87,.9); }
+.bold,strong { font-weight: 700; }
+.italic,em { font-style: italic; font-weight: normal; }
+.pre-line { white-space: pre-line; }
+.pull-right { float: right; margin: 0 0 28px 28px; }
+
+.card {
+  margin: 2rem 0;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23);
+  background: #FFF;
+  padding: 2rem;
+}
+.card p { margin-bottom: 1rem; }
+.card p:last-child { margin-bottom: 0; }
+.card .card-title { font-weight: 700; font-size: 1.8rem; }
+.card .card-meta { color: rgba(87,87,87,.9); }
+.wrapper { position: relative; }
+
+/* Research controls/cards closely follow the supplied stylesheet. */
+#papers-display-group { float: left; }
+#papers-display-group .radio-label { position: relative; display: inline-block; cursor: pointer; }
+#papers-display-group .radio-label input[type=radio] { position: absolute; height: 0; width: 0; overflow: hidden; z-index: -1; opacity: 0; }
+#papers-display-group .radio-label input[type=radio] + .label-text {
+  display: inline-block; padding: 8px 24px; border-bottom: 4px solid transparent;
+  user-select: none; text-transform: uppercase; font-weight: bold; margin-bottom: 2rem; color: rgba(87,87,87,.8);
+}
+#papers-display-group .radio-label input[type=radio]:checked + .label-text { border-color: #026B7E; color: #026B7E; }
+#paper-search { width: 130px; padding: 0 12px; margin-left: 12px; border: 0; border-bottom: 2px solid #c8c8c8; background: transparent; }
+#toggle-abstracts { float: right; text-align: right; line-height: 2; margin-bottom: 2rem; }
+button.link-style { padding: 0; margin: 0; background: transparent; color: #026B7E; border: 0; cursor: pointer; }
+button.link-style:disabled { opacity: .3; cursor: default; }
+#papers { clear: both; margin-top: 2rem; }
+#papers .paper .abstract { display: none; margin-top: 1rem; background: #D9EBFF; padding: 12px; border-radius: 4px; }
+#papers .paper.expanded .abstract { display: block; }
+#papers.selected .paper:not(.selected),#papers.search .paper.search-hidden,#papers.active-tags .paper.tag-hidden { display: none; }
+.tag-list { font-size: .875em; margin-top: 10px; }
+.tag-filter { margin: 1rem 0 2rem; }
+.tag-toggle-container { display: inline-block; margin: 0 12px 5px 0; }
+.tag-toggle-container label { font-weight: normal; cursor: pointer; }
+.tag-toggle-container .tag-toggle:checked + label { font-weight: bold; }
+.abstract-toggle { float: right; font-size: 2rem; line-height: 1; border: 0; background: transparent; color: #026B7E; cursor: pointer; }
+
+.profile-image { width: 100%; max-width: 350px; }
+.meta-line { color: rgba(87,87,87,.9); margin-bottom: .5rem; }
+.clean-list { padding-left: 0 !important; list-style: none !important; }
+.clean-list li { padding-left: 0 !important; }
+
+@media (max-width: 900px) {
+  body { padding-bottom: 80px; }
+
+  /*
+   * Compact responsive header.
+   * The desktop photo/sidebar layout remains unchanged above 900px, but on
+   * smaller screens the navigation becomes a slim top bar instead of a large
+   * block that pushes the page content far down the screen.
+   */
+  #header #nav-container,
+  body.sidebar-layout #header #nav-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 1.4rem 2.2rem !important;
+    background: rgba(29,53,83,.94);
+    text-align: left;
+  }
+
+  #header #logo,
+  body.sidebar-layout #header #logo {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    letter-spacing: .1rem;
+    margin: 0 !important;
+    padding: .2rem 2rem .2rem 0 !important;
+    border: 0;
+    border-right: 1px solid rgba(255,255,255,.45);
+  }
+
+  #header #main-nav {
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .2rem 1.6rem;
+  }
+
+  #header #main-nav li { margin: 0; }
+  #header #main-nav li a,
+  body.sidebar-layout #header #main-nav li a {
+    margin: 0;
+    padding: .45rem 0;
+    font-size: 1.35rem;
+    line-height: 1.2;
+    letter-spacing: 1.4px;
+  }
+
+  body.sidebar-layout #header {
+    position: relative;
+    top: auto; bottom: auto; left: auto;
+    width: 100%;
+    min-height: 0;
+    height: auto;
+    margin: 0 !important;
+    padding: 0 !important;
+    clip-path: none !important;
+    background-image: none;
+    background-color: #1D3553;
+    text-align: left;
+  }
+
+  /* Override the higher-specificity desktop angled-sidebar rule on small screens. */
+  body.sidebar-layout.sidebar-headerangle #header {
+    padding-right: 0 !important;
+    clip-path: none !important;
+  }
+
+  body.sidebar-layout #header::before { display: none; }
+  body.sidebar-layout #content { margin: 0; padding: 0; }
+  #content .content-inner {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 2.4rem 6rem;
+  }
+
+  /* The homepage keeps the full-screen photograph; only its menu becomes compact. */
+  body.home #header { background-image: var(--site-background-image); }
+}
+
+@media (max-width: 640px) {
+  #header #nav-container,
+  body.sidebar-layout #header #nav-container {
+    display: block;
+    padding: 1.5rem 1.8rem 1.3rem !important;
+  }
+
+  #header #logo,
+  body.sidebar-layout #header #logo {
+    width: 100%;
+    font-size: 2.5rem;
+    margin-bottom: .8rem !important;
+    padding: 0 0 .8rem !important;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255,255,255,.42);
+  }
+
+  #header #main-nav {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: .15rem 1rem;
+    width: 100%;
+  }
+
+  #header #main-nav li a,
+  body.sidebar-layout #header #main-nav li a {
+    display: block;
+    padding: .5rem 0;
+    font-size: 1.2rem;
+    letter-spacing: 1.2px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 { margin-top: 2rem; font-size: 3.4rem; }
+
+  #header #main-nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #content .content-inner { padding: 3rem 1.8rem 5rem; }
+  #papers-display-group,#toggle-abstracts { float: none; text-align: center; }
+  #papers-display-group .radio-label input[type=radio] + .label-text { padding: 8px 10px; }
+  #paper-search { width: 90px; }
+  .pull-right { float: none; display: block; margin: 0 auto 2rem; }
+}
+
+/* =========================================================
+   HOME PAGE: KEEP THE FULL DESKTOP-STYLE PANEL AT ALL WIDTHS
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  body.home #header #nav-container {
+    display: inline-block;
+    width: auto !important;
+
+    background: rgba(29, 53, 83, 0.85);
+
+    padding: 5rem !important;
+    margin: 0 6% 0 0 !important;
+
+    text-align: right;
+  }
+
+  body.home #header #logo {
+    display: block;
+    width: auto;
+
+    /* adjust this if needed */
+    font-size: 3.8rem;
+
+    line-height: 1.2;
+    white-space: nowrap;
+
+    padding: 0 0 1.6rem !important;
+    margin: 0 0 1.6rem !important;
+
+    border-right: 0;
+    border-bottom: 1px solid #999;
+  }
+
+  body.home #header #main-nav {
+    display: block;
+    width: auto;
+  }
+
+  body.home #header #main-nav li {
+    display: block;
+  }
+
+  body.home #header #main-nav li a {
+    display: inline-block;
+
+    font-size: 1.6rem;
+    line-height: 1.5;
+    letter-spacing: 2px;
+
+    margin: 0 0 8px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 640px) {
+
+  body.home #header #nav-container {
+    display: inline-block;
+    width: auto !important;
+
+    padding: 3rem !important;
+    margin-right: 3% !important;
+  }
+
+  body.home #header #logo {
+    width: auto;
+
+    font-size: 3.5rem;
+
+    padding: 0 0 1.4rem !important;
+    margin: 0 0 1.4rem !important;
+
+    border-right: 0;
+    border-bottom: 1px solid #999;
+  }
+
+  body.home #header #main-nav {
+    display: block;
+  }
+
+  body.home #header #main-nav li a {
+    font-size: 1.4rem;
+    padding: 0;
+    margin-bottom: 7px;
+  }
+}
+
+
+/*
+ * Chinese typography
+ * ------------------
+ * Chinese runs are wrapped by main.js in .zh-caoshu spans. We apply a
+ * brush-cursive Chinese font directly instead of depending on mixed-script fallback.
+ */
+.zh-caoshu {
+  font-family: "Long Cang", "Xingkai SC", "STXingkai", "华文行楷" !important;
+  font-weight: 400 !important;
+  font-style: normal;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+}
+
+/* English name: Dancing Script */
+#header #logo,
+#header #logo a,
+body.sidebar-layout #header #logo,
+body.sidebar-layout #header #logo a {
+  font-family: "Dancing Script";
+  font-weight: 600;
+}
+
+/* Chinese name: keep Long Cang */
+#header #logo .zh-caoshu,
+#header #logo a .zh-caoshu {
+  font-family: "Long Cang", "Xingkai SC", "STXingkai" !important;
+  font-weight: 400 !important;
+}
+
+/* =========================================
+   INNER PAGES: HORIZONTAL PHOTO HEADER
+   ========================================= */
+
+body.sidebar-layout #header {
+  position: relative !important;
+
+  width: 100% !important;
+  height: 360px;
+
+  top: auto !important;
+  left: auto !important;
+  bottom: auto !important;
+
+  margin: 0 0 5rem 0 !important;
+  padding: 0 !important;
+
+  background-image: var(--site-background-image);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  clip-path: none !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  text-align: right;
+}
+
+
+/* dark navigation box, like homepage */
+body.sidebar-layout #header #nav-container {
+  margin: 0 13.5% 0 0 !important;
+  padding: 3.5rem 4rem !important;
+
+  width: auto !important;
+
+  background: rgba(29, 53, 83, 0.85);
+}
+
+
+/* name size on inner pages */
+body.sidebar-layout #header #nav-container #logo {
+  font-size: 3.5rem;
+  padding: 0 0 1.5rem 0 !important;
+  margin: 0 0 1.5rem 0 !important;
+}
+
+
+/* inner-page content is no longer pushed right */
+body.sidebar-layout #content {
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+/* remove old angled sidebar */
+body.sidebar-layout.sidebar-headerangle #header {
+  padding-right: 0 !important;
+  clip-path: none !important;
+}
+
+/* ============================================================
+   INNER PAGE LAYOUT FIXES
+   ============================================================ */
+
+/* 1) Desktop inner-page header:
+   remove the empty top/bottom space around the navbar panel */
+@media (min-width: 901px) {
+
+  body.sidebar-layout #header {
+    margin: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+
+    /* makes the blue panel fill the full header height */
+    align-items: stretch !important;
+  }
+
+  body.sidebar-layout #header #nav-container {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+
+    align-self: stretch !important;
+    min-height: 100% !important;
+
+    /* keep the contents vertically centered */
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+  }
+
+
+  /* 2) Center the lower page content */
+  body.sidebar-layout #content {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  body.sidebar-layout #content .content-inner {
+    width: min(800px, calc(100% - 48px)) !important;
+    max-width: 800px !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+
+/* 3) Mobile: center the navbar */
+@media (max-width: 640px) {
+
+  body.sidebar-layout #header,
+  body.sidebar-layout #header #nav-container {
+    text-align: center !important;
+  }
+
+  body.sidebar-layout #header #nav-container {
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  body.sidebar-layout #header #logo {
+    text-align: center !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  body.sidebar-layout #header #main-nav {
+    width: min(100%, 38rem) !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    justify-items: center !important;
+  }
+
+  body.sidebar-layout #header #main-nav li,
+  body.sidebar-layout #header #main-nav li a {
+    width: 100% !important;
+    text-align: center !important;
+  }
+}
+
+/* Mobile inner pages: remove excessive vertical spacing */
+@media (max-width: 640px) {
+
+  body.sidebar-layout #header {
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: block !important;
+  }
+
+  body.sidebar-layout #header #nav-container {
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 3rem 1.25rem 3rem !important;
+
+    display: block !important;
+  }
+
+  body.sidebar-layout #header #logo {
+    margin: 0 auto 1rem !important;
+    padding: 0 0 1rem !important;
+  }
+
+  body.sidebar-layout #header #main-nav {
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+
+  body.sidebar-layout #header #main-nav li {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  body.sidebar-layout #header #main-nav li a {
+    margin: 0 !important;
+    padding: 0.35rem 0 !important;
+  }
+
+  /* remove gap between navbar and page content */
+  body.sidebar-layout #content {
+    margin-top: 0 !important;
+    padding-top: 2rem !important;
+  }
+}
+
+/* Inner pages: add breathing room above the page content */
+@media (min-width: 901px) {
+  body.sidebar-layout #content {
+    padding-top: 5rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+/* Bio page: no text wrapping around photo on small screens */
+@media (max-width: 700px) {
+  body[data-page="bio"] .profile-image.pull-right {
+    float: none !important;
+    display: block !important;
+
+    width: 100% !important;
+    max-width: 350px !important;
+    height: auto !important;
+
+    margin: 0 auto 2.5rem !important;
+  }
+}
+
+/* ==========================================
+   INNER PAGE TITLES
+   ========================================== */
+
+body.sidebar-layout #content h1:first-child {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+
+  color: #7E5F4E;
+
+  font-size: 3.4rem;
+  line-height: 1.15;
+
+  margin: 0 0 2.5rem 0;
+  padding: 0 0 0.9rem 0;
+
+  border-bottom: 1px solid #c8c8c8;
+}
+
+/* Bio photo */
+body[data-page="bio"] .profile-image {
+  width: 280px !important;
+  max-width: 35% !important;
+  height: auto !important;
+
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+@media (max-width: 700px) {
+  body[data-page="bio"] .profile-image.pull-right {
+    float: none !important;
+
+    width: 220px !important;
+    max-width: 75% !important;
+    height: auto !important;
+
+    margin: 0 auto 2.5rem !important;
+
+    border-radius: 8px !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  }
+}
+
+.bio-document-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,38 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Your Name</title>
+  <meta name="description" content="Academic website">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/css/fonts.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body class="sidebar-layout sidebar-headerangle" data-page="research" data-root="..">
+  <div id="header">
+    <div id="nav-container">
+      <h1 id="logo"><a href="../index.html">Your Name</a></h1>
+      <ul class="nav" id="main-nav" role="navigation"></ul>
+    </div>
+  </div>
+  <main id="content">
+    <div class="content-inner">
+      <h1 id="page-title"></h1>
+      <p id="page-intro"></p>
+      <div id="papers-display-group">
+        <label class="radio-label"><input class="papers-display" type="radio" name="paper-mode" value="all" checked><span class="label-text">All</span></label>
+        <label class="radio-label"><input class="papers-display" type="radio" name="paper-mode" value="selected"><span class="label-text">Selected</span></label>
+        <label class="radio-label"><input class="papers-display" id="search-papers" type="radio" name="paper-mode" value="search"><span class="label-text">Search <input id="paper-search" type="search" aria-label="Search papers"></span></label>
+      </div>
+      <div id="toggle-abstracts"><button class="link-style" id="show-abstracts">show abstracts</button> · <button class="link-style" id="hide-abstracts">hide abstracts</button></div>
+      <div style="clear:both"></div>
+      <div class="tag-filter" id="tag-filter"></div>
+      <div id="papers"></div>
+    </div>
+  </main>
+  <script src="../config/site.js"></script>
+  <script src="../config/research.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
