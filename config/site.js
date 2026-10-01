@@ -20,8 +20,6 @@ window.SITE_CONFIG = {
 
   navigation: [
     { key: "research", label: "Research", href: "research/index.html" },
-    { key: "courses",  label: "Courses",  href: "courses/index.html" },
-    { key: "students", label: "Students", href: "students/index.html" },
     { key: "events",   label: "Events",   href: "events/index.html" },
     { key: "contact",  label: "Contact",  href: "contact/index.html" },
     { key: "bio",      label: "Bio",      href: "bio/index.html" }
