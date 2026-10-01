@@ -75,7 +75,7 @@
 
   function link(label, url) {
     if (!url) return escapeHTML(label);
-    return '<a href="' + escapeHTML(url) + '">' + escapeHTML(label) + "</a>";
+    return '<a href="' + rootPath(escapeHTML(url)) + '">' + escapeHTML(label) + "</a>";
   }
 
   function renderResearch() {
@@ -234,7 +234,7 @@
         html +=
           '<a class="button" href="' +
           escapeHTML(rootPath(cfg.resume)) +
-          '">Resume</a>';
+          '">Résumé</a>';
       }
 
       html += "</p>";
