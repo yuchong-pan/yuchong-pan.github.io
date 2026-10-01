@@ -196,7 +196,11 @@
     if (cfg.email) html += '<p><strong>Email:</strong> <a href="mailto:'+escapeHTML(cfg.email)+'">'+escapeHTML(cfg.email)+'</a></p>';
     if (cfg.phone) html += '<p><strong>Phone:</strong> '+escapeHTML(cfg.phone)+'</p>';
     if (cfg.links && cfg.links.length) {
-      html += "<h2>Links</h2><p>" + cfg.links.map(function(l){ return link(l.label,l.url); }).join(" &nbsp; · &nbsp; ") + "</p>";
+      html += "<p>" +
+        cfg.links.map(function(l){
+          return link(l.label, l.url);
+        }).join(" &nbsp; · &nbsp; ") +
+        "</p>";
     }
     document.getElementById("page-body").innerHTML = html;
   }
