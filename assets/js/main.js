@@ -98,7 +98,25 @@
       el.className = "paper card" + (p.selected ? " selected" : "");
       el.dataset.searchstr = [p.title,p.authors,p.venue,(p.tags || []).join(" ")].join(" ").toLowerCase();
       el.dataset.tags = JSON.stringify(p.tags || []);
+      
       var titleHTML = p.paper ? link(p.title, p.paper) : escapeHTML(p.title);
+
+      var abstractParagraphs = Array.isArray(p.abstract)
+        ? p.abstract
+        : [p.abstract || ""];
+
+      var abstractHTML = abstractParagraphs
+        .filter(function (paragraph) {
+          return paragraph != null && String(paragraph).trim() !== "";
+        })
+        .map(function (paragraph, paragraphIndex) {
+          return '<p>' +
+            (paragraphIndex === 0 ? '<strong>Abstract.</strong> ' : '') +
+            escapeHTML(paragraph) +
+            '</p>';
+        })
+        .join("");
+
       el.innerHTML =
         '<div class="wrapper">' +
           '<button class="abstract-toggle" aria-expanded="false" aria-controls="abstract-' + i + '" title="Toggle abstract">+</button>' +
@@ -106,11 +124,16 @@
           '<p class="card-meta">' + escapeHTML(p.authors) + '</p>' +
           '<p class="card-meta italic">' + escapeHTML(p.venue) + '</p>' +
           '<div class="tag-list">' + (p.tags || []).map(escapeHTML).join(" · ") + '</div>' +
-          '<div class="abstract" id="abstract-' + i + '"><strong>Abstract.</strong> ' + escapeHTML(p.abstract || "") + '</div>' +
+          '<div class="abstract" id="abstract-' + i + '">' + abstractHTML + '</div>' +
         '</div>';
+
       papers.appendChild(el);
     });
     installResearchInteractions();
+
+    if (window.MathJax && window.MathJax.typesetPromise) {
+      window.MathJax.typesetPromise([papers]);
+    }
   }
 
   function installResearchInteractions() {
