@@ -716,4 +716,5 @@ body[data-page="bio"] .profile-image {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  margin-top: 2.5rem;
 }
