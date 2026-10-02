@@ -47,7 +47,7 @@
   var logoLink = document.querySelector("#logo a");
   if (logoLink) {
     logoLink.textContent = site.name || "Your Name";
-    logoLink.href = pageKey === "home" ? "index.html" : rootPath("index.html");
+    logoLink.href = site.homeUrl || "/";
   }
 
   var nav = document.getElementById("main-nav");

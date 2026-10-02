@@ -7,6 +7,7 @@ window.SITE_CONFIG = {
   name: "潘宇冲 Yuchong Pan",
   siteTitle: "Yuchong Pan",
   description: "Personal website of Yuchong Pan.",
+  homeUrl: "https://ypan.me/",
 
   // Put your own image in assets/images/ and change this path.
   // A wide landscape photo works best because it fills the entire home page
