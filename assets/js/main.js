@@ -99,7 +99,12 @@
       el.dataset.searchstr = [p.title,p.authors,p.venue,(p.tags || []).join(" ")].join(" ").toLowerCase();
       el.dataset.tags = JSON.stringify(p.tags || []);
       
-      var titleHTML = p.paper ? link(p.title, p.paper) : escapeHTML(p.title);
+      var titleHTML = p.paper
+      ? '<a href="' + rootPath(escapeHTML(p.paper)) +
+        '" target="_blank" rel="noopener noreferrer">' +
+        escapeHTML(p.title) +
+        '</a>'
+      : escapeHTML(p.title);
 
       var abstractParagraphs = Array.isArray(p.abstract)
         ? p.abstract
