@@ -1,7 +1,7 @@
 window.RESEARCH_CONFIG = {
   title: "Research",
   intro: "My research interests lie broadly in algorithms, combinatorics, and optimization, with connections to computer science and operations research. I am particularly interested in the design and analysis of approximation algorithms and in understanding the combinatorial and polyhedral structure underlying optimization problems.",
-  tags: ["Approximation Algorithms", "Combinatorial Optimization", "Polyhedral Combinatorics", "Network Flow", "Graph Theory", "Linear Algebra", "Demand Matching", "Traveling Salesman Problem", "Submodular Flow", "Theses"],
+  tags: ["Approximation Algorithms", "Combinatorial Optimization", "Polyhedral Combinatorics", "Network Flow", "Graph Theory", "Linear Algebra", "Demand Matching", "Traveling Salesman Problem", "Submodular Flow", "Thesis"],
   publications: [
     {
       title: "Bicriteria Approximation Algorithms for Demand Matching",
@@ -50,7 +50,7 @@ window.RESEARCH_CONFIG = {
       authors: "Michel X. Goemans, Yuchong Pan",
       venue: "Manuscript",
       selected: false,
-      tags: ["Combinatorial Optimization", "Polyhedral Combinatorics", "Submodular Flow"],
+      tags: ["Combinatorial Optimization", "Polyhedral Combinatorics", "Linear Algebra", "Submodular Flow"],
       paper: "assets/files/counterexample.pdf",
       abstract: "Abdi, Cornuéjols and Zambelli [Combinatorica 2024] proved that the intersection of two crossing submodular flow systems on a weakly connected digraph is totally dual integral, though not box-integral. Abdi subsequently conjectured that this polyhedral system is box-half-integral. We exhibit a counterexample to this conjecture."
     },
@@ -59,7 +59,7 @@ window.RESEARCH_CONFIG = {
       authors: "Yuchong Pan",
       venue: "Honours Thesis, University of British Columbia",
       selected: false,
-      tags: ["Approximation Algorithms", "Combinatorial Optimization", "Network Flow"],
+      tags: ["Approximation Algorithms", "Combinatorial Optimization", "Network Flow", "Thesis"],
       paper: "assets/files/honoursthesis.pdf",
       abstract: [
         "In a vertex-capacitated directed graph with sources and sinks, we would like to concurrently route demands from the sources to the sinks. This model has many applications in the real world. However, conditions in the reality usually incur new side constraints to this general model. For instance, the next-hop routing in Internet protocol (IP) networks requires each router to have one single next destination, called the next hop, for each incoming packet destined to an IP address. A flow with this property is said to be confluent. If this constraint is relaxed to allow $d$ next destinations at each vertex, then such a flow is said to be $d$-furcated. In general, side constraints concerning bounded out-degree of each vertex give rise to network flows with degree constraints. Such constraints contribute to simplicity of resulting network flow models.",
